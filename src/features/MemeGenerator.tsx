@@ -29,9 +29,9 @@ export const MemeGenerator = () => {
   const [background, setBackground] = useState(BACKGROUNDS[0]);
 
   return (
-    <div className="z-10 w-full max-w-5xl flex items-center justify-start font-mono text-sm">
-      <div className="flex flex-col mb-4 mr-8 gap-1">
-      <label>Texts:</label>
+    <div className="z-10 w-full max-w-5xl flex flex-col md:flex-row items-center justify-start font-mono text-sm">
+      <div className="flex flex-col mb-4 md:mb-0 md:mr-8 gap-1">
+        <label>Texts:</label>
         <input
           type="text"
           value={textUp}
