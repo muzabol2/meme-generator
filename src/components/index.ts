@@ -1,2 +1,2 @@
-export { CustomImage } from "./CustomImage";
-export { GitHubLink } from "./GitHubLink";
+export * from "./CustomImage";
+export * from "./Header";

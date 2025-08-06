@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { CustomImage } from "@/components";
-import { SelectBackground } from "./SelectBackground";
+import { SelectBackground } from "@/features";
+import type { Background } from "@/types";
 
-const BACKGROUNDS = [
+const BACKGROUNDS: Background[] = [
   {
     id: "Panie-Areczku_qarami",
     title: "Panie Areczku",

@@ -1,16 +1,13 @@
 import React from "react";
 import { CldImage } from "next-cloudinary";
+import type { Background } from "@/types";
 
-interface Props {
-  id: string;
-  title: string;
-  width: number;
-  height: number
+interface Props extends Background {
   textUp: string;
   textDown: string;
 }
 
-const CustomImage = ({ id, title,width, height, textUp, textDown }: Props) => {
+const CustomImage = ({ id, title, width, height, textUp, textDown }: Props) => {
   return (
     <div className="w-full flex justify-center">
       <CldImage
